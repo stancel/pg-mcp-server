@@ -9,7 +9,7 @@ from mcp.client.sse import sse_client
 async def run(connection_string: str | None):
     """Test the MCP server with an optional database connection string."""
     # Assuming your server is running on localhost:8000
-    server_url = "http://localhost:8000/sse"  
+    server_url = "http://localhost:8500/sse"  
     
     try:
         print(f"Connecting to MCP server at {server_url}...")

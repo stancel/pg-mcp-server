@@ -14,7 +14,7 @@ from tabulate import tabulate
 dotenv.load_dotenv()
 anthropic_api_key = os.getenv('ANTHROPIC_API_KEY')
 db_url = os.getenv('DATABASE_URL')
-pg_mcp_url = os.getenv('PG_MCP_URL', 'http://localhost:8000/sse')
+pg_mcp_url = os.getenv('PG_MCP_URL', 'http://localhost:8500/sse')
 
 def clean_sql_query(sql_query):
     """

@@ -37,7 +37,7 @@ server/
   logging_config.py - Logging setup
   prompts/        - Jinja2 prompt templates
   resources/      - MCP resource handlers (schema discovery)
-  tools/          - MCP tool handlers (query, explain, connect)
+  tools/          - MCP tool handlers (query, explain, connect, viz)
 example-clients/
   claude_cli.py   - Claude-powered natural language SQL client
   gemini-agent-cli.py - Gemini-powered agent client

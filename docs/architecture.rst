@@ -150,6 +150,8 @@ Tools
 - **disconnect** -- Close a database connection
 - **pg_query** -- Execute read-only SQL queries using a connection ID
 - **pg_explain** -- Analyze query execution plans in JSON format
+- **pg_metadata** -- Extract column metadata from a SQL query for
+  visualization support
 
 Resources
 ----------------------------------------------------------------------
@@ -158,12 +160,22 @@ Schema discovery via URI patterns:
 
 - ``pgmcp://{conn_id}/`` -- Comprehensive database description
 - ``pgmcp://{conn_id}/schemas`` -- List schemas
-- ``pgmcp://{conn_id}/schemas/{schema}/tables`` -- List tables
-- ``pgmcp://{conn_id}/schemas/{schema}/tables/{table}/columns`` --
-  Column details
+- ``pgmcp://{conn_id}/schemas/{schema}`` -- Schema details
+- ``pgmcp://{conn_id}/schemas/{schema}/tables/{table}`` -- Table details
+- ``pgmcp://{conn_id}/schemas/{schema}/materialized_views/{view}`` --
+  Materialized view details
+- ``pgmcp://{conn_id}/schemas/{schema}/tables/{table}/sample`` --
+  Sample table data
+- ``pgmcp://{conn_id}/schemas/{schema}/tables/{table}/rowcount`` --
+  Approximate row count
+- ``pgmcp://{conn_id}/schemas/{schema}/extensions`` -- List extensions
+- ``pgmcp://{conn_id}/schemas/{schema}/extensions/{extension}`` --
+  Extension details with context
 
 Prompts
 ----------------------------------------------------------------------
 
-Jinja2-based prompt templates in ``server/prompts/`` for guiding
-AI agent interactions with database context.
+Jinja2-based prompt templates in ``server/prompts/``:
+
+- **natural_language** -- Natural language to SQL conversion prompts
+- **data_visualization** -- Data visualization guidance prompts
