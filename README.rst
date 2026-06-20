@@ -104,6 +104,7 @@ Key Commands
 References
 ======================================================================
 
+- This fork: https://github.com/stancel/pg-mcp-server
 - Upstream repository: https://github.com/stuzero/pg-mcp-server
 - Project documentation: https://stuzero.github.io/pg-mcp/
 - Model Context Protocol: https://modelcontextprotocol.io

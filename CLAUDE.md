@@ -7,6 +7,7 @@
 - **App location**: `~/docker/pg-mcp-server/`
 - **Local URL**: http://10.0.1.220:8500 (SSE endpoint at `/sse`)
 - **Public URL**: None (local only)
+- **Fork (origin)**: https://github.com/stancel/pg-mcp-server
 - **Upstream**: https://github.com/stuzero/pg-mcp-server
 - **Docs**: https://stuzero.github.io/pg-mcp/
 - **Current version**: 0.1.0 (custom build from source)

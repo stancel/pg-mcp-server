@@ -16,6 +16,9 @@ Changelog
 - Expanded CLAUDE.md source structure to document all subdirectories:
   ``prompts/templates/``, ``resources/sql/``, ``resources/extensions/``,
   plus ``get_schema.py`` and ``test.py`` utility scripts
+- Forked to https://github.com/stancel/pg-mcp-server; remotes updated so
+  ``origin`` = fork, ``upstream`` = stuzero/pg-mcp-server
+- Updated CLAUDE.md and README.rst to document the fork URL
 
 .. _pg-mcp-server-changelog-2026-03-22b:
 
