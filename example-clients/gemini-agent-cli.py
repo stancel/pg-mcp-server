@@ -19,7 +19,7 @@ from httpx import AsyncClient
 dotenv.load_dotenv()
 
 # Default values
-DEFAULT_MCP_URL = os.getenv("PG_MCP_URL", "http://localhost:8000/sse")
+DEFAULT_MCP_URL = os.getenv("PG_MCP_URL", "http://localhost:8500/sse")
 DEFAULT_DB_URL = os.getenv("DATABASE_URL", "")
 DEFAULT_API_KEY = os.getenv("GEMINI_API_KEY", "")
 

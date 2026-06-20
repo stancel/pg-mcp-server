@@ -4,6 +4,19 @@
 Changelog
 ######################################################################
 
+.. _pg-mcp-server-changelog-2026-06-20:
+
+2026-06-20 -- Repo Sync: Port Fixes and Source Structure Documentation
+======================================================================
+
+- Fixed ``get_schema.py`` hardcoded URL from port 8000 to 8500
+- Fixed ``example-clients/gemini-agent-cli.py`` default URL from port 8000
+  to 8500 (matching the prior fix to ``claude_cli.py`` and ``test.py``)
+- Fixed ``.env.example`` ``PG_MCP_URL`` from port 8000 to 8500
+- Expanded CLAUDE.md source structure to document all subdirectories:
+  ``prompts/templates/``, ``resources/sql/``, ``resources/extensions/``,
+  plus ``get_schema.py`` and ``test.py`` utility scripts
+
 .. _pg-mcp-server-changelog-2026-03-22b:
 
 2026-03-22 -- Documentation Sync and Port Update

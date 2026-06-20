@@ -35,12 +35,26 @@ server/
   config.py       - Configuration settings
   database.py     - asyncpg connection management
   logging_config.py - Logging setup
-  prompts/        - Jinja2 prompt templates
-  resources/      - MCP resource handlers (schema discovery)
-  tools/          - MCP tool handlers (query, explain, connect, viz)
+  prompts/
+    natural_language.py   - Natural language to SQL prompt registration
+    data_visualization.py - Data visualization prompt registration
+    templates/            - Jinja2 templates (generate_sql, generate_vega,
+                            justify_sql, validate_nl)
+  resources/
+    schema.py       - Schema discovery resources (schemas, tables, columns)
+    data.py         - Data resources (sample data, rowcount)
+    extensions.py   - Extension context resources
+    extensions/     - YAML extension definitions (postgis, pgvector)
+    sql/            - Raw SQL files for schema queries
+  tools/
+    connection.py   - connect/disconnect tools
+    query.py        - pg_query and pg_explain tools
+    viz.py          - pg_metadata visualization tool
 example-clients/
-  claude_cli.py   - Claude-powered natural language SQL client
-  gemini-agent-cli.py - Gemini-powered agent client
+  claude_cli.py         - Claude-powered natural language SQL client
+  gemini-agent-cli.py   - Gemini-powered agent client
+get_schema.py     - Utility: dump full schema to JSON via MCP
+test.py           - Integration test script for MCP server
 ```
 
 ## Compose Files

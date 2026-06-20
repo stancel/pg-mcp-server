@@ -8,8 +8,8 @@ from mcp.client.sse import sse_client
 
 async def run(connection_string: str | None):
     """Download a comprhensive database schema from the MCP server."""
-    # Assuming your server is running on localhost:8000
-    server_url = "http://localhost:8000/sse"  
+    # Assuming your server is running on localhost:8500
+    server_url = "http://localhost:8500/sse"
     
     try:
         print(f"Connecting to MCP server at {server_url}...")
